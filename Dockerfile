@@ -22,10 +22,10 @@ ENV EXTRA_JAVA_HOMES /usr/lib/jvm/java-7-oracle/
 
 RUN \
   cd /data/graal && \
-  ./mx.sh --vm graal build
+  ./mx.sh --vm server build
 
 # Define mountable directories.
-VOLUME ["/data"]
+# VOLUME ["/data"]
 
 # Define working directory.
 WORKDIR /data
